@@ -1,0 +1,16 @@
+<% if @people.size >0 %>
+There are people with this query. <br>
+  <% @people.each do |current_person| %>
+    <%= link_to "#{current_person.name}", person_path(current_person) %><br>
+  <% end %>
+<% else %>
+No people with this query exist. <br>
+<% end %>
+<% if @places.size >0 %>
+There are places with this query. <br>
+  <% @places.each do |current_place| %>
+    <%= link_to "#{current_place.name}", place_path(current_place) %><br>
+  <% end %>
+<% else %>
+No places with this query could be found.
+<% end %>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ransacksearch</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to "Places", places_path %><br>
+    <%= link_to "Add place", new_place_path %><br>
+    <%= link_to "People", people_path %><br>
+    <%= link_to "Add person", new_person_path %><br>
+    <%= link_to "Seach", ransack_overall_search_path %> <br>
+    <%= yield %>
+  </body>
+</html>

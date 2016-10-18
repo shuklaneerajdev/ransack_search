@@ -1,0 +1,9 @@
+<%= form_tag ransack_search_result_path, method: :get do %>
+  <p>
+    Search term:<br />
+    <%= text_area_tag "search_term", "", :size=>"50x20" %>
+  </p>
+  <p>
+    <%= submit_tag 'Submit' %>
+  </p>
+<%end %>
